@@ -6,3 +6,5 @@ Metas <- Vendas >= 20
 Atingiram_meta <- sum(Metas)
 # Substituindo qualquer valor de vendas inferior a 15 por 15:
 Vendas[Vendas < 15] <- 15
+# Gerando um "relatório" de desempenho:
+relatorio <- ifelse(Metas, "Atingiu a meta", "Não atingiu a meta")
