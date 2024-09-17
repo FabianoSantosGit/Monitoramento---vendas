@@ -1,2 +1,4 @@
 #Criar um vetor com as vendas diárias de 10 vendedores:
-Vendas <- c(1,2,3,4,5,6,7,8,9,10)
+Vendas <- c(15,22,25,30,35,40,45,55,60,65)
+#Verificando quais vendedores atingiram a meta mínima de 20 vendas:
+Metas <- Vendas >= 20
