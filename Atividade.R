@@ -8,3 +8,10 @@ Atingiram_meta <- sum(Metas)
 Vendas[Vendas < 15] <- 15
 # Gerando um "relatório" de desempenho:
 relatorio <- ifelse(Metas, "Atingiu a meta", "Não atingiu a meta")
+# Exibindo os resultados
+cat("Vendas ajustadas:", Vendas, "\n")
+cat("Vendedores que atingiram a meta:", Atingiram_meta, "\n")
+cat("Relatório de desempenho:\n")
+for (i in 1:length(Vendas)) {
+  cat(paste("Vendedor", i, ":", relatorio[i], "\n"))
+}
